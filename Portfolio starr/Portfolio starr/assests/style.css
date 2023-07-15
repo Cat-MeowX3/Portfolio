@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kurale&family=Playfair+Display&display=swap');
+
+/* home screen*/
+.home-header{
+    background-image:url(images/head%20background.png);
+    background-size: cover;
+    width: 100%;
+    height: 757px;
+}
+html {
+    margin: 0;
+}
+/* greeting screen*/
+h1  { 
+    margin: auto;
+    text-align: center;
+    padding: 16vw;
+    line-height: .9;
+    padding-top: 18vw;
+}
+/*navbar*/
+#navbar{
+    position: inherit;
+    background: #440381;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right:40px;
+}
+
+#navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#navbar .container a{
+    color:#51e5ff;
+    text-decoration: none;
+}
+
+#navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+#navbar .menu li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #51e5ff;
+}
+
+#navbar .menu li a:hover{
+    color: #fff;
+}
+
+/* type */
+#projects, #contact {
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 150px;
+}
+h2{
+    font-family: 'Kurale', serif;
+}
+body{
+    font-family: 'Julius Sans One', sans-serif;
+}
+/* about */
+#about{
+    box-sizing: border-box;
+    display: flex;
+    margin: 60px;
+    align-items: center;
+}
+.about-me{
+    font-size: 30px;
+    display: block;
+    position:static;
+    text-align: center;
+}
+.me-about{
+    margin-left: 40px;
+    flex: 2;
+    position:static;
+}
+.profile {
+    width: 50%;
+    height: auto;
+    flex: 1;
+}
+@media screen and (max-width: 812px) {
+    div.A {
+        font-size: 80%;
+    }
+    #about {
+        flex-direction: column;
+    }
+    .profile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+}
+/* body*/
+body{
+    margin: 0;
+    box-sizing: content-box;
+}
+h1{
+    margin: 0;
+}
+/*graphic slide*/
+
+/* Projects */
+.projects {
+    margin: 50px;
+
+}
+
+.mid {
+    background-color: #4c5353c2;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    right: -20;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media screen and (max-width: 812px) {
+    .mid {
+        background-color: #4c5353c2;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    right: -20;
+    width: 160%;
+    height: fit-content
+    }
+}
+
+.G {
+    position: relative;
+}
+.text {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.G:hover .mid {
+    opacity: 1;
+}
+/*image*/
+.G img {
+    opacity: 1;
+    height: auto;
+    transition: .5s ease-in-out;
+}
+.row .G:focus, .row .G:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
+}
+.Gcontainer {
+    margin: 30px;
+    display: inline-block;
+}
+img{
+    width: 30vw;
+    margin: .5vw;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* scroll */
+html{
+    scroll-behavior: smooth;
+}
